@@ -2,8 +2,11 @@ An icon theme (do nothing about colors) for [xplr](https://github.com/sayanariji
 
 Based on [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) with some input from [nnn](https://github.com/jarun/nnn). Text formats are well covered. Binary formats still needs some attention.
 
-Installation
-------------
+## Requirements
+
+- [A patched font](https://www.nerdfonts.com/)
+
+## Installation
 
 ### Install manually
 

@@ -27,5 +27,5 @@ Based on [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) wi
 - Require the module in `~/.config/xplr/init.lua`
 
   ```lua
-  require"icons"
+  require"icons".setup()
   ```

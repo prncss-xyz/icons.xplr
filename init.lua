@@ -220,10 +220,11 @@ function setup()
   xplr.config.node_types.extension.less = { meta = { icon = "" } }
   xplr.config.node_types.extension.lhs = { meta = { icon = "" } }
   xplr.config.node_types.extension.license = { meta = { icon = "" } }
+  xplr.config.node_types.extension.lock = { meta = { icon = red "" } }
   xplr.config.node_types.extension.lua = { meta = { icon = blue "" } }
   xplr.config.node_types.extension.markdown = { meta = { icon = "" } }
   xplr.config.node_types.extension.material = { meta = { icon = "" } }
-  xplr.config.node_types.extension.md = { meta = { icon = "" } }
+  xplr.config.node_types.extension.md = { meta = { icon = yellow "" } }
   xplr.config.node_types.extension.mdx = { meta = { icon = "" } }
   xplr.config.node_types.extension.mjs = { meta = { icon = "" } }
   xplr.config.node_types.extension.ml = { meta = { icon = "λ" } }
@@ -271,7 +272,7 @@ function setup()
   xplr.config.node_types.extension.t = { meta = { icon = "" } }
   xplr.config.node_types.extension.terminal = { meta = { icon = "" } }
   xplr.config.node_types.extension.tex = { meta = { icon = "ﭨ" } }
-  xplr.config.node_types.extension.toml = { meta = { icon = "" } }
+  xplr.config.node_types.extension.toml = { meta = { icon = white "" } }
   xplr.config.node_types.extension.tres = { meta = { icon = "" } }
   xplr.config.node_types.extension.ts = { meta = { icon = "" } }
   xplr.config.node_types.extension.tscn = { meta = { icon = "" } }

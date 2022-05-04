@@ -1,11 +1,43 @@
+local function black(x)
+  return "\x1b[30m" .. x .. "\x1b[0m"
+end
+
+local function red(x)
+  return "\x1b[31m" .. x .. "\x1b[0m"
+end
+
+local function green(x)
+  return "\x1b[32m" .. x .. "\x1b[0m"
+end
+
+local function yellow(x)
+  return "\x1b[33m" .. x .. "\x1b[0m"
+end
+
+local function blue(x)
+  return "\x1b[34m" .. x .. "\x1b[0m"
+end
+
+local function magenta(x)
+  return "\x1b[35m" .. x .. "\x1b[0m"
+end
+
+local function cyan(x)
+  return "\x1b[36m" .. x .. "\x1b[0m"
+end
+
+local function white(x)
+  return "\x1b[37m" .. x .. "\x1b[0m"
+end
+
 function setup()
   local xplr = xplr
 
   -- File = '',
   -- Folder = '',
-  xplr.config.node_types.directory.meta.icon = ""
-  xplr.config.node_types.file.meta.icon = ""
-  xplr.config.node_types.symlink.meta.icon = ""
+  xplr.config.node_types.directory.meta.icon = blue ""
+  xplr.config.node_types.file.meta.icon = cyan ""
+  xplr.config.node_types.symlink.meta.icon = magenta ""
 
   -- ["jpeg"] = {
   --   icon = "",
@@ -26,21 +58,21 @@ function setup()
   --
   xplr.config.node_types.mime_essence = {
     audio = {
-      ["*"] = {meta = { icon = ""}},
+      ["*"] = { meta = { icon = yellow "" } },
     },
     video = {
-      ["*"] = {meta = { icon = "ﳜ"}},
+      ["*"] = { meta = { icon = "ﳜ" } },
     },
     image = {
-      ["*"] = {meta = { icon = ""}},
+      ["*"] = { meta = { icon = "" } },
     },
     application = {
       -- application/zip
-      zip = { meta = { icon = ""} },
+      zip = { meta = { icon = "" } },
     },
     text = {
-      ["*"] = {meta = { icon = ""}},
-    }
+      ["*"] = { meta = { icon = "" } },
+    },
   }
 
   -- nnn https://github.com/jarun/nnn/blob/master/src/icons-nerdfont.h
@@ -83,7 +115,7 @@ function setup()
   xplr.config.node_types.special[".zshrc"] = { meta = { icon = "" } }
   xplr.config.node_types.special["Vagrantfile"] = { meta = { icon = "" } }
   xplr.config.node_types.special["COPYING.LESSER"] = { meta = { icon = "" } }
-  xplr.config.node_types.special["LICENSE"] = { meta = { icon = "" } }
+  xplr.config.node_types.special["LICENSE"] = { meta = { icon = red "" } }
 
   --- nnn
   xplr.config.node_types.extension.m3u = { meta = { icon = "" } }
@@ -188,7 +220,7 @@ function setup()
   xplr.config.node_types.extension.less = { meta = { icon = "" } }
   xplr.config.node_types.extension.lhs = { meta = { icon = "" } }
   xplr.config.node_types.extension.license = { meta = { icon = "" } }
-  xplr.config.node_types.extension.lua = { meta = { icon = "" } }
+  xplr.config.node_types.extension.lua = { meta = { icon = blue "" } }
   xplr.config.node_types.extension.markdown = { meta = { icon = "" } }
   xplr.config.node_types.extension.material = { meta = { icon = "" } }
   xplr.config.node_types.extension.md = { meta = { icon = "" } }
@@ -211,7 +243,7 @@ function setup()
   xplr.config.node_types.extension.ps1 = { meta = { icon = "" } }
   xplr.config.node_types.extension.psb = { meta = { icon = "" } }
   xplr.config.node_types.extension.psd = { meta = { icon = "" } }
-  xplr.config.node_types.extension.py = { meta = { icon = "" } }
+  xplr.config.node_types.extension.py = { meta = { icon = yellow "" } }
   xplr.config.node_types.extension.pyc = { meta = { icon = "" } }
   xplr.config.node_types.extension.pyd = { meta = { icon = "" } }
   xplr.config.node_types.extension.pyo = { meta = { icon = "" } }
@@ -222,7 +254,7 @@ function setup()
   xplr.config.node_types.extension.rlib = { meta = { icon = "" } }
   xplr.config.node_types.extension.rmd = { meta = { icon = "" } }
   xplr.config.node_types.extension.rproj = { meta = { icon = "鉶" } }
-  xplr.config.node_types.extension.rs = { meta = { icon = "" } }
+  xplr.config.node_types.extension.rs = { meta = { icon = red "" } }
   xplr.config.node_types.extension.rss = { meta = { icon = "" } }
   xplr.config.node_types.extension.sass = { meta = { icon = "" } }
   xplr.config.node_types.extension.scala = { meta = { icon = "" } }

@@ -26,6 +26,10 @@ local function cyan(x)
   return "\x1b[36m" .. x .. "\x1b[0m"
 end
 
+local function purple(x)
+  return "\x1b[38;5;135m" .. x .. "\x1b[0m"
+end
+
 local function white(x)
   return "\x1b[37m" .. x .. "\x1b[0m"
 end
@@ -272,6 +276,7 @@ function setup()
   xplr.config.node_types.extension.t = { meta = { icon = "" } }
   xplr.config.node_types.extension.terminal = { meta = { icon = "" } }
   xplr.config.node_types.extension.tex = { meta = { icon = "ﭨ" } }
+  xplr.config.node_types.extension.tf = { meta = { icon = purple "" } }
   xplr.config.node_types.extension.toml = { meta = { icon = white "" } }
   xplr.config.node_types.extension.tres = { meta = { icon = "" } }
   xplr.config.node_types.extension.ts = { meta = { icon = "" } }

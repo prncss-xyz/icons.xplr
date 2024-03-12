@@ -80,7 +80,7 @@ function setup()
   xplr.config.node_types.special["Documents"] = { meta = { icon = "" } }
   xplr.config.node_types.special["Downloads"] = { meta = { icon = "" } }
   xplr.config.node_types.special["Music"] = { meta = { icon = "" } }
-  xplr.config.node_types.special["Pictures"] = { meta = { icon = "" } }
+  xplr.config.node_types.special["Pictures"] = { meta = { icon = "󰉔" } }
   -- xplr.config.node_types.special["Public"] = { meta = { icon = "" } }
   xplr.config.node_types.special["Templates"] = { meta = { icon = "陼" } }
   xplr.config.node_types.special["Videos"] = { meta = { icon = "" } }
